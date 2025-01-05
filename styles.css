@@ -19,7 +19,7 @@ body {
 }
 
   .download-btn {
-    background-color: #4CAF50; /* Green */
+    background-color: #fff; /* white */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -28,6 +28,6 @@ body {
   }
 
   .download-btn:hover {
-    background-color: #45a049;
+    background-color: red;
   }
 
