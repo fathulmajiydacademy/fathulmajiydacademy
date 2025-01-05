@@ -17,3 +17,17 @@ body {
   padding: 1% 2%;
   border-bottom: 2px solid #005c3c;
 }
+
+  .download-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .download-btn:hover {
+    background-color: #45a049;
+  }
+
