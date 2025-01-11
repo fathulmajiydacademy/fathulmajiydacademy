@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f9;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header Styles */
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+/* Navigation Styles */
+nav {
+  background: #35424a;
+  color: #ffffff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+  position: relative; /* For hover effects */
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+  color: #f4f4f9;
+  text-decoration: underline;
+}
+
+/* Hover Effect - Add underline animation */
+nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f4f4f9;
+  transition: width 0.3s ease;
+  margin: auto;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Section Styles */
+section#history {
+  padding: 20px 0;
+  text-align: center;
+}
+
+section#history h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #35424a;
+  transition: color 0.3s ease;
+}
+
+section#history h2:hover {
+  color: rgb(61, 5, 61);
+}
+
+section#history p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  transition: transform 0.3s ease;
+}
+
+section#history p:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer Styles */
+footer {
+  background: #35424a;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+footer:hover {
+  background: #222;
+}
