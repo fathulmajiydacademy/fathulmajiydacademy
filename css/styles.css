@@ -134,7 +134,9 @@ footer {
 footer:hover {
   background: #222;
 }
-.staffList {
+.staffList . sessionList {
   list-style: none;
+  margin: 15px;
+  padding: 7px 0;
   justify-content: center;
 }
