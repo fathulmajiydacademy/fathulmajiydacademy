@@ -136,8 +136,5 @@ footer:hover {
 }
 .staffList {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: left;
+  justify-content: center;
 }
