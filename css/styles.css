@@ -11,7 +11,7 @@ body {
 .logo {
   width: 180px;
 }
-.container {
+.header {
   width: 80%;
   margin: auto;
   overflow: hidden;
@@ -93,7 +93,29 @@ nav ul li a:hover::after {
   list-style-type: none;
   margin: 0% 15px;
 }
+/* Grid templates */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(150px, auto));
+}
 
+.container div {
+  background-color: darkgray;
+  padding: 30px;
+}
+
+.container div:nth-child(even) {
+  background-color: darkorchid;
+}
+
+.our-history {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 /* Section Styles */
 section#history {
   padding: 20px 0;
@@ -103,22 +125,17 @@ section#history {
 section#history h2 {
   font-size: 2em;
   margin-bottom: 10px;
-  color: #35424a;
+  padding: 10;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
-section#history h2:hover {
-  color: rgb(61, 5, 61);
-}
-
 section#history p {
+  background-color: #35424a;
+  color: #ffffff;
   font-size: 1.1em;
   line-height: 1.8;
   transition: transform 0.3s ease;
-}
-
-section#history p:hover {
-  transform: scale(1.05); /* Slight zoom effect */
 }
 
 /* Footer Styles */
@@ -131,12 +148,8 @@ footer {
   transition: background 0.3s ease;
 }
 
-footer:hover {
-  background: #222;
-}
-.staffList . sessionList {
-  list-style: none;
+.first-team {
   margin: 15px;
-  padding: 7px 0;
-  justify-content: center;
+  padding: 10px 0;
+  text-align: left;
 }
