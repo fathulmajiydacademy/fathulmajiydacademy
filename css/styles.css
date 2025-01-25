@@ -5,11 +5,11 @@ body {
   padding: 0;
   line-height: 1.6;
   color: rgb(61, 5, 61);
-  background-color: #e6e6e7;
+  background-color: #8d8d99;
 }
 
 .logo {
-  width: 180px;
+  width: 18px;
 }
 .header {
   width: 80%;
@@ -82,14 +82,14 @@ nav ul li a::after {
   content: "";
   display: block;
   width: 0;
-  height: 2px;
+  /* height: 2px; */
   background: #f4f4f9;
   transition: width 0.3s ease;
   margin: auto;
 }
 
 nav ul li a:hover::after {
-  width: 100%;
+  width: 80%;
   list-style-type: none;
   margin: 0% 15px;
 }
@@ -99,22 +99,43 @@ nav ul li a:hover::after {
   margin: 0 auto;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, minmax(150px, auto));
 }
 
 .container div {
-  background-color: darkgray;
+  background-color: rgb(138, 110, 105);
   padding: 30px;
+  color: #ffffff;
 }
 
 .container div:nth-child(even) {
-  background-color: darkorchid;
+  background-color: rgb(74, 34, 94);
 }
 
 .our-history {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+  grid-column: 1/4;
+}
+
+.achievement {
+  grid-column: 1/2;
+}
+
+.morning-session {
+  background-color: rgb(61, 14, 85);
+  grid-column: 2/4;
+  grid-row: 2;
+}
+
+.islamiiya-session {
+  grid-column: 4/6;
+  grid-row: 1;
+}
+.tahfiz-session {
+  grid-row: 2;
+  grid-column: 4/6;
 }
 /* Section Styles */
 section#history {
@@ -152,4 +173,34 @@ footer {
   margin: 15px;
   padding: 10px 0;
   text-align: left;
+}
+
+:root {
+  --margin-mobile: 16px;
+  --padding-mobile: 16px;
+
+  --margin-tablet: 24px;
+  --padding-tablet: 24px;
+
+  --margin-desktop: 32px;
+  --padding-desktop: 40px;
+}
+
+.container {
+  margin: var(--margin-mobile);
+  padding: var(--padding-mobile);
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: var(--margin-tablet);
+    padding: var(--padding-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin: var(--margin-desktop);
+    padding: var(--padding-desktop);
+  }
 }
