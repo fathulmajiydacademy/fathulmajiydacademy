@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: rgb(151, 55, 240);
   font-family: "Roboto";
 }
 
@@ -13,12 +13,17 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  gap: 10px;
+}
+
+.logo {
+  border-radius: 10px;
 }
 
 .navigation .container h1 {
   font-size: 36px;
   font-weight: 900;
-  color: rgb(122, 8, 229);
+  color: rgb(45, 2, 85);
   margin-top: 10px;
 }
 
@@ -49,10 +54,22 @@ li a {
 }
 
 .background-container {
-  background-image: url("./images/Nursery.jpg");
-  background-size: cover; /* Ensures the image covers the div */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat;
-  padding: 40px 20px; /* Adjust for spacing */
-  color: white;
+  background-image: url("/images/Graduate-2025.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  color: #f4f4f4;
+  font-weight: 900;
+  text-align: start;
+  border-radius: 10px;
+}
+
+.header .container {
+  display: flex;
+  flex-flow: column;
+  margin: 30px;
+}
+
+.background-container h2 {
+  /* color: #f9f9f9; */
 }
