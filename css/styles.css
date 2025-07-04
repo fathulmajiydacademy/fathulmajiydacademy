@@ -20,3 +20,29 @@ body {
   color: rgb(122, 8, 229);
   margin-top: 10px;
 }
+
+ul {
+  list-style: none;
+}
+
+.navigation .container-2 {
+  background-color: rgb(45, 2, 85);
+
+  border-radius: 10px;
+  margin: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+li a {
+  color: #f9f9f9;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
