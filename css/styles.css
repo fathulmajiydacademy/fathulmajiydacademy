@@ -73,3 +73,83 @@ li a {
 .background-container h2 {
   /* color: #f9f9f9; */
 }
+/* --- Responsive Styles Start --- */
+
+/* Adjust container and header on medium screens (tablets) */
+@media (max-width: 900px) {
+  .navigation .container h1 {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 18px;
+  }
+  .navigation .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .navigation ul {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+  }
+  .navigation .container-2 {
+    margin: 15px 10px;
+    padding: 8px 0;
+  }
+  .background-container {
+    padding: 25px;
+    font-size: 1rem;
+  }
+  .header .container {
+    margin: 15px 6px;
+  }
+}
+
+/* On mobile screens */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+  .navigation .container h1 {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.2;
+  }
+  .logo {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  .navigation .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  .navigation .container-2 {
+    margin: 8px 2px;
+    padding: 6px 0;
+  }
+  .navigation ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .background-container {
+    padding: 10px;
+    font-size: 0.96rem;
+    text-align: left;
+  }
+  .header .container {
+    margin: 5px 2px;
+  }
+  .background-container h2 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Images always scale to container width */
+img.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Responsive Styles End --- */
